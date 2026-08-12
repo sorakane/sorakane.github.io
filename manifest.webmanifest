@@ -1,0 +1,18 @@
+{
+  "name": "演舞隊形エディタ",
+  "short_name": "隊形エディタ",
+  "description": "踊りの隊形を配置・保存・印刷するためのローカルエディタ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F1EA",
+  "theme_color": "#10223C",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
