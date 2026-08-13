@@ -1,4 +1,4 @@
-const CACHE_NAME = "enbu-formation-editor-v37";
+const CACHE_NAME = "enbu-formation-editor-v38";
 const APP_SHELL = ["/", "/manifest.webmanifest", "/favicon.svg"];
 
 self.addEventListener("install", (event) => {
