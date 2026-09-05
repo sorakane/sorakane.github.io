@@ -1,0 +1,72 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background" x1="70" y1="16" x2="1110" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101F"/>
+      <stop offset="0.52" stop-color="#10233A"/>
+      <stop offset="1" stop-color="#0A151F"/>
+    </linearGradient>
+    <linearGradient id="icon" x1="78" y1="73" x2="164" y2="169" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BE4FF"/>
+      <stop offset="1" stop-color="#3888FF"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="694" y1="112" x2="1109" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#243D59" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#14273A" stop-opacity="0.88"/>
+    </linearGradient>
+    <filter id="shadow" x="637" y="68" width="528" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000814" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1091" cy="-3" r="265" fill="#2597FF" fill-opacity="0.10"/>
+  <circle cx="80" cy="650" r="260" fill="#4DD3B3" fill-opacity="0.08"/>
+
+  <rect x="68" y="66" width="104" height="104" rx="28" fill="url(#icon)"/>
+  <path d="M98 96H142M98 118H142M98 140H142" stroke="white" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="109" cy="96" r="7" fill="#07182B"/>
+  <circle cx="134" cy="118" r="7" fill="#07182B"/>
+  <circle cx="118" cy="140" r="7" fill="#07182B"/>
+
+  <text x="68" y="248" fill="white" font-size="62" font-weight="700" letter-spacing="-2" font-family="-apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif">演舞隊形エディタ</text>
+  <text x="70" y="305" fill="#BDD0E4" font-size="27" font-weight="500" letter-spacing="0.5" font-family="-apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif">踊りの隊形を、かんたんに作成・編集・共有</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="21" font-weight="600">
+    <rect x="69" y="370" width="160" height="52" rx="26" fill="#162C42" stroke="#31506E"/>
+    <circle cx="97" cy="396" r="8" fill="#65D7B6"/>
+    <text x="115" y="403" fill="#E9F4FF">隊形をつくる</text>
+    <rect x="244" y="370" width="160" height="52" rx="26" fill="#162C42" stroke="#31506E"/>
+    <circle cx="272" cy="396" r="8" fill="#7DB9FF"/>
+    <text x="290" y="403" fill="#E9F4FF">動きを確認</text>
+    <rect x="419" y="370" width="160" height="52" rx="26" fill="#162C42" stroke="#31506E"/>
+    <circle cx="447" cy="396" r="8" fill="#F0A9DE"/>
+    <text x="465" y="403" fill="#E9F4FF">URLで共有</text>
+  </g>
+
+  <text x="70" y="529" fill="#7F9AB5" font-size="20" font-weight="500" letter-spacing="1" font-family="-apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif">SMARTPHONE  /  WINDOWS  /  MAC</text>
+
+  <g filter="url(#shadow)">
+    <rect x="670" y="91" width="455" height="430" rx="30" fill="url(#stage)" stroke="#3F5D79" stroke-width="2"/>
+    <rect x="697" y="120" width="401" height="52" rx="15" fill="#102237"/>
+    <circle cx="726" cy="146" r="6" fill="#FF7585"/>
+    <circle cx="747" cy="146" r="6" fill="#FFD36A"/>
+    <circle cx="768" cy="146" r="6" fill="#65D7B6"/>
+    <rect x="798" y="139" width="114" height="14" rx="7" fill="#6B829A" fill-opacity="0.52"/>
+
+    <g stroke="#63819E" stroke-opacity="0.42" stroke-width="2">
+      <path d="M722 204V482M772 204V482M822 204V482M872 204V482M922 204V482M972 204V482M1022 204V482M1072 204V482"/>
+      <path d="M703 222H1092M703 270H1092M703 318H1092M703 366H1092M703 414H1092M703 462H1092"/>
+    </g>
+    <path d="M897 197V487" stroke="#99C7F1" stroke-opacity="0.62" stroke-width="3"/>
+
+    <g>
+      <rect x="788" y="238" width="68" height="32" rx="13" fill="#61CBF4"/>
+      <rect x="940" y="238" width="68" height="32" rx="13" fill="#D86ECC"/>
+      <rect x="713" y="318" width="68" height="32" rx="13" fill="#F2AA84"/>
+      <rect x="864" y="318" width="68" height="32" rx="13" fill="#61CBF4"/>
+      <rect x="1016" y="318" width="68" height="32" rx="13" fill="#47D45A"/>
+      <rect x="788" y="398" width="68" height="32" rx="13" fill="#D86ECC"/>
+      <rect x="940" y="398" width="68" height="32" rx="13" fill="#F2AA84"/>
+    </g>
+  </g>
+</svg>
