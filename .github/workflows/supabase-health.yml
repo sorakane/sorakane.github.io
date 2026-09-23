@@ -1,0 +1,32 @@
+name: Supabase connection check
+
+on:
+  schedule:
+    - cron: '23 3,15 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read-only database connectivity check
+        shell: bash
+        run: |
+          # The randomly generated lookup cannot expose an existing share link.
+          # This RPC only reads; it creates/updates/deletes no formation data.
+          token=$(openssl rand -hex 32)
+          response=$(curl --silent --show-error --fail --max-time 30 \
+            --retry 2 --retry-delay 5 --retry-all-errors \
+            'https://xqptftvecupgiybhhhkh.supabase.co/rest/v1/rpc/load_shared_formation' \
+            -H 'apikey: sb_publishable_PtLJjwScoxvCJuoaeFG2Qw_z_cTvPEa' \
+            -H 'Content-Type: application/json' \
+            --data "{\"p_edit_token\":\"$token\"}")
+          # Never print response bodies or real project information.
+          if [ "$response" != "null" ]; then
+            echo '::error::Unexpected database response. Check Supabase availability.'
+            exit 1
+          fi
+          echo 'Read-only database check passed.'
