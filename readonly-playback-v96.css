@@ -1,0 +1,17 @@
+/* Viewing links retain playback controls on compact/landscape phones. */
+@media screen and (max-width: 950px) {
+  .app-shell.read-only .file-toolbar {
+    display: flex;
+    position: static;
+  }
+  .app-shell.read-only .file-toolbar .toolbar-right {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    min-width: 0;
+  }
+  .app-shell.read-only .file-toolbar .toolbar-right > button {
+    min-width: 0;
+    white-space: normal;
+  }
+}
